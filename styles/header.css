@@ -1,0 +1,116 @@
+.header-container {
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: var(--bg-header);
+  color: var(--color-text-secondary);
+}
+
+.header-menu {
+  gap: 0.5rem;
+}
+
+.header-menu-item a {
+  color: var(--color-text-secondary);
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn-mobile {
+  color: var(--color-text-secondary);
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: var(--bg-header);
+    z-index: 100;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+  }
+
+  .header-navigation.active-visibility .header-menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .header-menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .btn-mobile {
+    color: var(--color-text-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  .header-detail-hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    color: var(--color-text-secondary);
+  }
+
+  .header-detail-hamburguer::after,
+  .header-detail-hamburguer::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  .header-navigation.active-visibility .header-detail-hamburguer {
+    border-top-color: transparent;
+  }
+
+  .header-navigation.active-visibility .header-detail-hamburguer::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+  }
+
+  .header-navigation.active-visibility .header-detail-hamburguer::after {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    top: -7px;
+  }
+}

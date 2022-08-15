@@ -1,0 +1,39 @@
+.about-container {
+  background-color: var(--bg-color-secondary);
+  color: var(--color-text-tertiary);
+  padding: 1rem 1rem 4rem;
+}
+
+.about-title {
+  text-align: center;
+  padding: 2.4rem 0;
+  border-top: 2px solid #138d8222;
+}
+
+.about-title h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.about-title p {
+  font-size: 0.975rem;
+  line-height: 1.4;
+}
+
+.about-content {
+  color: var(--color-text-primary);
+  width: 60ch;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    width: 100%;
+  }
+}

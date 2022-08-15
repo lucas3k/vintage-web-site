@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--bg-color-secondary);
+  color: var(--color-text-tertiary);
+  border-top: 2px solid #138d8222;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-content ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content,
+.footer-copyright {
+  align-self: center;
+  justify-self: center;
+}
+
+.footer-content a,
+.footer-copyright p,
+.footer-copyright a {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

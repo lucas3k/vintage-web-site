@@ -1,0 +1,126 @@
+.products-container {
+  background-color: var(--bg-color-secondary);
+  color: var(--color-text-tertiary);
+}
+
+.products-title {
+  text-align: center;
+  padding: 2.4rem 0;
+  border-top: 2px solid #138d8222;
+}
+
+.products-title h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.products-title p {
+  font-size: 0.975rem;
+  line-height: 1.4;
+}
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 1rem 0 4rem;
+}
+
+.product {
+  color: var(--color-text-primary);
+  display: grid;
+  grid-template-rows: 130px 1fr;
+  overflow: hidden;
+  border: 1px solid #000;
+  padding: 1rem;
+  background-color: #fafafa99;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.product-img {
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product-description h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.product-description p {
+  flex-grow: 1;
+  font-size: 0.975rem;
+  line-height: 1.4;
+}
+
+.products-price {
+  font-size: 1.125rem;
+  margin: 0.875rem 0;
+}
+
+.products-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.products-buttons a:nth-child(1) {
+  background-color: #138d82;
+  color: #fff;
+  border: 1px solid #138d82;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.products-buttons a:nth-child(1):hover {
+  background-color: #fff;
+  color: #138d82;
+}
+
+.products-buttons a {
+  margin-right: 0.3rem;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  color: #000;
+  border: 1px solid currentColor;
+  font-size: 0.975rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.products-buttons a:hover {
+  background-color: #fff;
+  color: #138d82;
+}
+
+@media (max-width: 350px) {
+  .container-products {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .products-title {
+    padding: 1.6rem 0;
+  }
+}

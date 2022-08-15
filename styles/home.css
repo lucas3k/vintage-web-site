@@ -1,0 +1,102 @@
+.home-container {
+  background-color: var(--bg-color-secondary);
+  color: var(--color-text-tertiary);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  text-align: center;
+}
+
+.home-title h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-title p {
+  width: 35ch;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(5px 5px 5px #222);
+  animation: animatedImage 5s ease-in-out infinite;
+  -webkit-animation: animatedImage 5s ease-in-out infinite;
+}
+
+@keyframes animatedImage {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .home-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home-title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-title {
+    text-align: left;
+  }
+
+  .home-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  }
+
+  .home-title p {
+    margin-top: 1rem;
+    width: auto;
+  }
+
+  .home-image img {
+    margin-top: 0.875rem;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --color-text-primary: #131313;
+  --color-text-secondary: #fafafa;
+  --color-text-tertiary: #584632;
+
+  --bg-color-primary: #e8df9c;
+  --bg-color-secondary: #f1eecd;
+  --bg-header: #138d82;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--color-text-primary);
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+}

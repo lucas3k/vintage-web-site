@@ -1,0 +1,20 @@
+/* reset styles default browser */
+@import "./reset.css";
+
+/* global styles for pages */
+@import "./global.css";
+
+/* header styles */
+@import "./header.css";
+
+/* home styles */
+@import "./home.css";
+
+/* products styles */
+@import "./products.css";
+
+/* about styles */
+@import "./about.css";
+
+/* footer styles */
+@import "./footer.css";
